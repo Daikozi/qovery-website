@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "title": "Deploy real world applications",
+    "description": "Qovery Engine empowers you to deploy complex applications, such as a backend, a frontend, and a database in a very simple way. Servers, networking, security, all is done by the Engine for you.",
+    "link": "http://localhost:3000/",
+    "linkTitle": "SEE MORE",
+    "image": "/assets/images/deploy.png"
+  },
+  {
+    "id": 1,
+    "title": "Resiliency is key",
+    "description": "Qovery Engine knows when something goes wrong on the deployment of your applications. Qovery Engine is built with resiliency in mind. A transactional engine inspired by what is provided into ACID databases has been developed at the heart of the product to rollback on a consistent and working application version when something goes wrong.",
+    "link": "http://localhost:3000/",
+    "linkTitle": "SEE MORE",
+    "image": "/assets/images/resiliency.png"
+  },
+  {
+    "id": 2,
+    "title": "On top of the best tools",
+    "description": "Qovery Engine does not reinvent the wheel. It takes advantage of the best tools in the Cloud industry, such as Kubernetes, Terraform, and Helm to manage the deployment of the infrastructure and your applications. Servers, networking, security, all is done by the Engine for you.",
+    "link": "http://localhost:3000/",
+    "linkTitle": "SEE MORE",
+    "image": "/assets/images/tools.png"
+  },
+  {
+    "id": 3,
+    "title": "Extensible",
+    "description": "Qovery Engine is built to be highly extensible. Adding the support of a Cloud provider or a Continuous Integration platform is as simple as implementing a simple programmatic interface.",
+    "link": "http://localhost:3000/",
+    "linkTitle": "SEE MORE",
+    "image": "/assets/images/extensible.png"
+  }
+]

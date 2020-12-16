@@ -1,38 +1,310 @@
+@font-face {
+  font-family: "SF UI Text Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Regular"),
+    url("./assets/fonts/SFUIText-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Semibold"),
+    url("./assets/fonts/SFUIText-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk SemiBold"),
+    url("./assets/fonts/HKGrotesk-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Bold"),
+    url("./assets/fonts/HKGrotesk-Bold.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 46px;
+  font-family: "HK Grotesk Bold";
+  line-height: 110%;
+  margin-right: 24px;
+}
+
+h2 {
+  font-family: "HK Grotesk Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 110%;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "HK Grotesk SemiBold";
+  margin: 24px 0;
+}
+
+p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: #5d64d2;
+  font-size: 12px;
+  line-height: 130%;
+  font-family: "SF UI Text Semibold";
+  margin-top: 12px;
+  display: block;
+}
+
+button {
+  height: 39px;
+  padding: 0 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+button :first-child {
+  margin-right: 7px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #151b2b;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  max-width: 1440px;
+  background-color: #f9f9fd;
+  font-family: "SF UI Text Regular";
+  color: #454658;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero {
+  background-color: #151b2b;
+  position: relative;
+  justify-content: space-between;
+  color: #fff;
   min-height: 100vh;
+}
+
+.qovery_logo {
+  position: absolute;
+  top: 41px;
+  left: 151px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.hero__text {
+  width: 487px;
+  margin-top: 130px;
+  margin-right: 70px;
+  margin-left: 151px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.hero__text h3 {
+  line-height: 140%;
+}
+
+.hero__text p {
+  color: #8686b2;
+  margin: 0 7px;
+}
+
+.buttons__container {
+  margin-top: 48px;
+  display: flex;
+}
+
+.buttons__container > :first-child {
+  margin-right: 24px;
+  background-color: #454658;
+}
+
+.buttons__container > :last-child {
+  background-color: #6578c0;
+}
+
+.about__container {
+  width: 904.58px;
+  margin-top: 96px;
+  margin-bottom: 128px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #454658;
 }
 
-.App-link {
-  color: #61dafb;
+.about__container h2 {
+  margin-bottom: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about__container p {
+  margin: 0 33.79px 32px 33.79px;
+  text-align: center;
 }
+
+.usage__container {
+  width: 904.58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #454658;
+  position: relative;
+}
+
+.usage__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.usage__container h2 {
+  z-index: 1;
+}
+
+.usage__container p {
+  margin: 0 33.79px 105px 33.79px;
+  text-align: center;
+  z-index: 1;
+}
+
+.usage__code {
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 130%;
+  padding: 17px;
+}
+
+.usage__code__lang {
+  background: #5d64d2;
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fff;
+  width: 50px;
+  margin-bottom: 24px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+pre {
+  background-color: #fff !important;
+}
+
+.features__container {
+  margin-top: 101px;
+  width: 1059px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 65px;
+  column-gap: 203px;
+  color: #454658;
+}
+
+.features__container > :first-child img {
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-family: "HK Grotesk Bold";
+  line-height: 110%;
+}
+
+.feature p {
+  line-height: 110%;
+}
+
+.clients__container {
+  margin-top: 167px;
+}
+
+footer {
+  height: 100px;
+  background-color: #151b2b;
+  margin-top: 150px;
+}
+
+/* @media (max-width: 768px) {
+  .hero__container {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+    align-items: center;
+  }
+  .features__container {
+    grid-template-columns: 1fr;
+  }
+
+  .about__container img {
+    width: 80%;
+  }
+
+  .usage__code {
+    width: 80%;
+  }
+
+  .usage__img {
+    width: 80%;
+  }
+
+  .usage__container {
+    width: 100vw;
+  }
+
+  .hero__img img {
+    width: 80%;
+  }
+
+  .hero__text {
+    width: 100%;
+  }
+} */

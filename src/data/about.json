@@ -1,0 +1,5 @@
+{
+  "title": "How does it work?",
+  "description": "Qovery Engine is an open-source abstraction layer product that turns easy apps deployment on AWS, GCP, Azure and others Cloud providers. The Qovery Engine is coded in Rust and takes advantage of Terraform, Helm, Kubectl, Docker to manage resources.",
+  "image": "/assets/images/about.png"
+}

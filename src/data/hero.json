@@ -1,0 +1,8 @@
+{
+  "logo": "/assets/images/Logotype.png",
+  "image": "/assets/images/hero.png",
+  "github_star": "/assets/images/github_star.png",
+  "title": "Qovery Engine",
+  "subtitle": "Abstraction layer to deploy microservices applications on any Cloud provider.",
+  "description": "Qovery Engine is an open-source abstraction layer product that turns easy apps deployment on AWS, GCP, Azure and others Cloud providers."
+}

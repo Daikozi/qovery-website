@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { useEffect } from "react";
+
+//Layout elements
+import Hero from "./layout/Hero";
+import About from "./layout/About";
+import Usage from "./layout/Usage";
+import Clients from "./layout/Clients";
+import Features from "./layout/Features";
+import Footer from "./layout/Footer";
+
+//function
+import { animation } from "./functions/animation";
 
 function App() {
+  useEffect(() => {
+    animation();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <About />
+      <Usage />
+      <Features />
+      <Clients />
+      <Footer />
     </div>
   );
 }
